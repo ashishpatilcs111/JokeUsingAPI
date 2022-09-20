@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    text-align: center;
+    padding:  1rem;
+    font-size: 1.5rem;
+    color: rgb(112, 112, 48);
+    text-shadow: 5px;
+
+}
+
+main{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+
+textarea{
+    height: 5rem;
+    width: 25rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: .8rem;
+    font-size: 1rem;
+}
+textarea:hover{
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.25);
+}
+button{
+    height: 3rem;
+    width: 7rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    color:black;
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgb(214, 199, 199);
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.25);
+}
+body{
+    background-image: url('backgroundImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .35);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal{
+    background-color: rgb(193, 46, 227);
+    border-radius: 6px;
+    box-shadow: 0 15px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px 50px;
+    width: 500px;
+}
